@@ -20,8 +20,8 @@ if '-skip' not in sys.argv:
 
 	request = requests.get('https://api.dnsdb.info/lookup/rrset/name/*.' + domain, headers={'X-API-Key': api-key})
 	domains = []
-
-	#Write the DNS's we find the a file
+	
+	#Parse and save DNS we find to <domain>.unique.dns file
 	dnsFile = open(domain + '.unique.dns', 'w')
 	for line in request.text.replace(' ', '\n').split('\n'):
 		if str(line).endswith('.'):
