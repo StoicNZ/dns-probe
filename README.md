@@ -5,6 +5,10 @@ This script will look up a given domain name on DNSDB and then check for subdoma
 
 *Python 2 only.*
 
+##Example:
+
+![Example GIF](https://github.com/StoicNZ/dns-probe/raw/master/example.gif)
+
 ##Usage:
 
 ```python dns.py <domain>```
